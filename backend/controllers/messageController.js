@@ -74,8 +74,8 @@ export const getMessage = async (req, res) => {
         res.status(200).json(messages);
     } catch (error) {
         console.log('Error in get message controller', error.message)
-        // res.status(500).json({
-        //     error: 'internal serval error'
-        // })
+        res.status(500).json({
+           error: 'internal serval error'
+         })
     }
 }
